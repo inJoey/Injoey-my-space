@@ -1,0 +1,152 @@
+{
+    "storymap": {
+        "call_to_action": true,
+        "call_to_action_text": "",
+        "map_as_image": false,
+        "map_type": "stamen:toner-labels",
+        "slides": [
+            {
+                "date": "2023-10-20",
+                "location": {
+                    "line": true
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://th.bing.com/th/id/R.8695e1e1c354095dc2a3d63146215176?rik=3KIFI%2bP0TSNrLA&riu=http%3a%2f%2fn.sinaimg.cn%2fsinacn20190520s%2f388%2fw1269h719%2f20190520%2f8695-hxhyium3020412.jpg&ehk=%2bk9Sx%2budjKKnz8bkmeVdSuOPZIEsieue85q4X29%2bWy4%3d&risl=&pid=ImgRaw&r=0"
+                },
+                "text": {
+                    "headline": "费迪南德·麦哲伦的世界航行",
+                    "text": "基于地图的交互叙事作品"
+                },
+                "type": "overview"
+            },
+            {
+                "date": "2013-10-20",
+                "location": {
+                    "lat": 37.38283000,
+                    "line": true,
+                    "lon": -5.97317000,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://th.bing.com/th/id/R.9f2b308c0f3576051d512efc0d3517a7?rik=TZ0j5icAl0oyLQ&riu=http%3a%2f%2fyouimg1.c-ctrip.com%2ftarget%2ffd%2ftg%2fg4%2fM02%2fB9%2fB4%2fCggYHlZB3diABtFGAA1fgxQ5oAw223.jpg&ehk=5cDTuQEt74PEaKyJ3GkL24wi%2b48j8I8nRbduZZpNj6w%3d&risl=&pid=ImgRaw&r=00"
+                },
+                "text": {
+                    "headline": "开始出发",
+                    "text": "1519.9.20 于西班牙塞利维亚"
+                }
+            },
+            {
+                "date": "",
+                "location": {
+                    "lat": -22.90684670,
+                    "line": true,
+                    "lon": -43.17289650,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "图片标题",
+                    "credit": "",
+                    "url": "https://th.bing.com/th/id/R.c4a71aa5786d60beedd5205b596652af?rik=gS5vepLPiBKp8w&riu=http%3a%2f%2fyouimg1.c-ctrip.com%2ftarget%2f100w0400000007z253D9B.png&ehk=54UTrvevxF15DQkE3X9%2fQV8T30EkQWFQ1hHLOPJIFRc%3d&risl=&pid=ImgRaw&r=0"
+                },
+                "text": {
+                    "headline": "登陆巴西",
+                    "text": "1519.12.13 麦哲伦率船队穿越大西洋，于里约热内卢登陆巴西"
+                }
+            },
+            {
+                "date": "2013-10-20",
+                "location": {
+                    "lat": -53.5888172,
+                    "line": true,
+                    "lon": -70.759749,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://p8.itc.cn/q_70/images03/20220417/13fb100a813b4164acdbba30776f2562.jpeg"
+                },
+                "text": {
+                    "headline": "穿越麦哲伦海峡",
+                    "text": "1520.11.1-11.28 麦哲伦船队穿越现今被称为“麦哲伦海峡”的峡道，顺利抵达“南海”"
+                }
+            },
+            {
+                "date": "2013-10-20",
+                "location": {
+                    "lat": -52.3334,
+                    "line": true,
+                    "lon": -68.35445,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://youimg1.c-ctrip.com/target/100d14000000w9n31102C.jpg"
+                },
+                "text": {
+                    "headline": "抵达马加兰斯角",
+                    "text": "1520.11.28 麦哲伦船队抵达南美洲最南端——马加兰斯角，因一路平安无风浪，麦哲伦将“南海”起名为“太平洋”"
+                }
+            },
+            {
+                "date": "2013-10-20",
+                "location": {
+                    "lat": 14.5833,
+                    "line": true,
+                    "lon": 121.0000,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://th.bing.com/th/id/R.a334d4bc18968f98f3922734a14338eb?rik=zhukPsfejMRx%2bw&riu=http%3a%2f%2fhimg2.huanqiu.com%2fattachment2010%2f2012%2f0815%2f20120815092021806.jpg&ehk=HJDhbG0YVs0XUcqr5ncNVijT5PWSTN7eOMJNrimk1NE%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                },
+                "text": {
+                    "headline": "抵达菲律宾",
+                    "text": "1520.11.28-1521.3.16 麦哲伦率船队跨越太平洋，抵达菲律宾，于苏禄群岛登陆。此时麦哲伦船队首次完成横跨太平洋壮举，证实了美洲与亚洲之间存在一片辽阔水域"
+                }
+            },
+            {
+                "date": "2013-10-20",
+                "location": {
+                    "lat": 10.305473,
+                    "line": true,
+                    "lon": 124.011226,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://img2.baidu.com/it/u=2327834281,4057428545&fm=253&fmt=auto&app=138&f=JPEG?w=660&h=445"
+                },
+                "text": {
+                    "headline": "麦哲伦之死",
+                    "text": "1524.4.27 麦哲伦插手宿务岛及周边岛屿间的争端，死于麦克坦岛岛民的反抗斗争中"
+                }
+            },
+            {
+                "date": "2013-10-20",
+                "location": {
+                    "lat": 37.38283000,
+                    "line": true,
+                    "lon": -5.97317000,
+                    "zoom": 10
+                },
+                "media": {
+                    "caption": "",
+                    "credit": "",
+                    "url": "https://th.bing.com/th/id/R.9f2b308c0f3576051d512efc0d3517a7?rik=TZ0j5icAl0oyLQ&riu=http%3a%2f%2fyouimg1.c-ctrip.com%2ftarget%2ffd%2ftg%2fg4%2fM02%2fB9%2fB4%2fCggYHlZB3diABtFGAA1fgxQ5oAw223.jpg&ehk=5cDTuQEt74PEaKyJ3GkL24wi%2b48j8I8nRbduZZpNj6w%3d&risl=&pid=ImgRaw&r=00"
+                },
+                "text": {
+                    "headline": "维多利亚号返航，人类完成首次环球航行",
+                    "text": "1522.9.6 麦哲伦死后，维多利亚号继续航行，并最终返回西班牙"
+                }
+            }
+        ]
+    }
+}
