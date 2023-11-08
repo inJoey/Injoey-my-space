@@ -1,44 +1,286 @@
 <!DOCTYPE html>
 <html lang="zh">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,0" />
-        <title>AIGC导航站</title>
-        <link rel="shortcut icon" herf="../logo.png" type="image/x-icon" />
-        <link rel="stylesheet" href="style.css">
-        <style>
-            ul{
-                list-style: none;
-            }
-        </style>
-    </head>
-    <body>
-        <h1 style="color:darkslateblue;">AIGC 资源导航</h1>
-        <h2 id="home" class="underwave">国产文本生成工具</h2>
-        <ul class="normal">
-            <li class="normal">
-                <a href="https://yiyan.baidu.com">文心一言</a>
-            </li>
-            <li>
-                <a href="https://xinghuo.xfyun.cn">讯飞星火</a>
-            </li>
-            <li>
-                <a href="https://tongyi.aliyun.com">通义千问</a>
-            </li>
-            <li>
-                <a href="https://www.doubao.com">字节跳动-豆包</a>
-            </li>
-        </ul>
-        <h2>国外文本生成工具</h2>
-        <ul>
-            <li>
-                <a href="https://bingai.cn">Bing Chat</a>
-            </li>
-        </ul>
-        <hr/>
-        <div>倒冲而用之或不盈</div>
-        <footer>
-            <p><a href="http://127.0.0.1:5500/nav/index.html">Injoey-my-space</a></p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蒟蒻导航站点</title>
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- <link rel="stylesheet" href="color.css" /> -->
+    <style>
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body class="text-gray-950">
+    <!-- 头部 -->
+    <h1
+      class="font-sans font-bold text-2xl text-pink-950 p-8 text-center border-b border-pink-100 border-solid shadow-sm"
+      style="
+        background-image: url('https://img.51miz.com/preview/element/00/01/13/65/E-1136552-83647971.jpg');
+      "
+    >
+      蒟蒻 资源导航
+    </h1>
+    <div class="bg-gray-100">
+      <div class="container mx-auto p-8">
+        <div class="flex items-center gap-2 mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="text-pink-950"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z"
+            />
+          </svg>
+          <h2 id="home" class="underwave text-lg text-gray-500">
+            国产AI工具
+          </h2>
+        </div>
+
+        <div class="flex gap-x-16 gap-y-8 flex-wrap mb-8">
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://xinghuo.xfyun.cn">
+              <div
+                class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+              >
+                <img
+                  src="data:image/jpeg;base64,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"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">讯飞星火认知大模型</h3>
+                  <p class="text-xs text-gray-400">
+                    科大讯飞开发的大模型，相对而言，对中文的理解更具优势。
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://yiyan.baidu.com">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://th.bing.com/th/id/OIP.L4jxcx6MAzUqZKDxpU0YbAHaHa?w=176&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">文心一言</h3>
+                  <p class="text-xs text-gray-400">百度基于文心大模型开发的AI对话工具。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://www.doubao.com/?utm_source=ai-bot.cn">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://lf-cdn-tos.bytescm.com/obj/static/doubao/web/static/image/avatar.9528ede0.webp"
+                  class="block w-26 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">豆包</h3>
+                  <p class="text-xs text-gray-400">字节跳动推出的免费AI对话助手。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://chuangyi.taobao.com/pages/aiCopy">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+              >
+                <img
+                  src="https://ossgw.alicdn.com/creatives-assets/image/5a873/2022/01/19/4559898a-1bf5-4c20-a364-6e8040f28db8.png"
+                  class="block w-12 h-18"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">悉言</h3>
+                  <p class="text-xs text-gray-400">
+                    阿里旗下智能文案生成工具，一键生成电商文案
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://verse.app.yinxiang.com/product/?utm_source=ai-bot.cn">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://cdn.yinxiang.com/verse/static/img/tubiao&wenzi.svg"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">Verse</h3>
+                  <p class="text-xs text-gray-400">印象笔记旗下团队推出的智能写作工具</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://effidit.qq.com/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://api.iowen.cn/favicon/effidit.qq.com.png"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">Effidit</h3>
+                  <p class="text-xs text-gray-400">腾讯AI Lab推出的智能创作助手</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="text-pink-950"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5 8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5Z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z"
+            />
+          </svg>
+          <h2 id="home" class="underwave text-lg text-gray-500">
+            国外AI工具
+          </h2>
+        </div>
+        <div class="flex gap-x-16 gap-y-8 flex-wrap mb-8">
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://openai.com/chatgpt">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+              >
+                <img
+                  src="https://th.bing.com/th?id=OSK.9418350dbfa57c14a56fe781335bb39a&w=84&h=84&c=7&o=6&dpr=1.5&pid=SANGAM"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">ChatGPT</h3>
+                  <p class="text-xs text-gray-400">
+                    OpenAI旗下AI对话工具
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://www.bing.com/new?cc=sg&setlang=zh-hans">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://th.bing.com/th/id/OIP.CS1XS6Wc1vSSOhCrxgzYngHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                  class="block w-24 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">新必应</h3>
+                  <p class="text-xs text-gray-400">必应推出的与ChatGPT联动的新版bing</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://grok.x.ai/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://th.bing.com/th/id/OIF.VSyquEh1OeN25XSbHWnOVQ?w=272&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                  class="block w-26 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">Grok</h3>
+                  <p class="text-xs text-gray-400">马斯克旗下xAI推出的人工智能助手</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://www.midjourney.com/home">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+              >
+                <img
+                  src="https://th.bing.com/th/id/OIP.-LO5jPxhRwpBFsMiW2gOzAHaHa?w=222&h=220&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                  class="block w-12 h-18"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">MidJourney</h3>
+                  <p class="text-xs text-gray-400">
+                    强大的AI图像与插画生成工具
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://www.deepl.com/translator">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="data:image/jpeg;base64,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HVx4n0W+tYxjWta0Na0ANa0ABoGgAA0yX0iktabTuVlaxWNQJ6oi8vR6p6oiB6p6oiB6oiICIiAiIgIiICIiAqEfxqqog1jEGDLDfQ+V8fs1fkdmrpgGvLv3We67nqomv2E79YC59RD19ECdmtpmudDl3da3e0+fqugF8va17XNc0Oa4Frg4Agg7wQdFtpltRpvirdzCimHEHRxbK7ramzubQVZzcYiCaOUnxaNW+Y9FFlztN2s05prlSyQSZnYc4bUUoHfFKOyQraZa3Q3xWosURFtahERAREQEREBSz0VRQf068z9VH139QEXW7I6wsELHbO1vy13KJlLnRV8JvPzX+3jWjP8ARRx/ukQAIiLnuiIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiArWtoKC4U8lLW08VRA8EOjmaHDzGeoPFXSIeooxB0aTw9ZU4fe6aPVxoah/wCIOEMrtD5E81HU0NRTTSU9RDJDPEdmSKZpZI08WldNkLD3nDtkv0XV3Cla6RoIiqI8mVERy/LINeR0VFM8x1ZLkwRburnhFuGIMA3yziSopA64UDc3F8Tf8TE392IbxxHotP355eJHPwVtbRbxHak1nUiIi9PAiIgKXOiv4TePmv8AbxqI1LnRV8JvPzX+3jWjP9FHH+6RERFz3REREBERAREQEREBERAREQEREBERAREQEREBERAREQEREFCP+BaniDAtivfWTxt9iuBBIqKZoDZHd3XR7iPQrbUWYmazuHmaxbqXPN8wzfbA8+3U+1TF2UdXBm+nf4ZuyzaeByWFXTskUUrHxSsa+N7S17HtDmuad4IOij3EHRtRVXWVNieykqDm40kmZpJDv7BHaafUcFZTkb6skycef+USIru4W25WqodS3Gllp5xubIM2vH6o3jskeRVoqYmJ8STEx1Ipd6KvhF5+af28SiJS50VH/pN5+a/28S08j6N/H+6RERFz3REREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQWVxtdsutO6luFNFUQnUCRubmn9THDUHyKi7EHRtX0vWVNjkdWQak0sxAqWDf+G/Rrv4Pmpe8VTIar3S9qeNd8db+uYnskikfFKx8csZLXxyNc17CNMnNdqpa6KvhF5+a/wBvGtnvmGLFf48q2ANqAMo6uDJlQzw7eWo4HNW+E8NyYZpK+kfVtqhU1pqY3iLqy1vVtjDXDMjPRbsmWL00048M0vtsqIEUyoREQEREBERAREQEREH/2Q=="
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">DeepL翻译</h3>
+                  <p class="text-xs text-gray-400">准确的人工智能翻译工具</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://gamma.app/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://th.bing.com/th/id/OIP.XESONTsY49UZLclFdFpHlwAAAA?w=123&h=150&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                  class="block w-12 h-14"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">Gamma</h3>
+                  <p class="text-xs text-gray-400">一键生成精美PPT</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 页脚部分 -->
+    <footer class="bg-gray-700 flex h-20 justify-center items-center">
+      <p class="text-center text-xs text-gray-50">
+        <a href="http://127.0.0.1:5500/nav/index.html">蒟蒻导航站点</a>
+      </p>
+    </footer>
+  </body>
 </html>

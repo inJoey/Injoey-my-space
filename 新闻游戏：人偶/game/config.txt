@@ -1,0 +1,5 @@
+Game_name:人/偶;
+Game_key:1526ed0264701b8;
+Package_name:;
+Title_bgm:s_Title.mp3;
+Title_img:封面.png;
